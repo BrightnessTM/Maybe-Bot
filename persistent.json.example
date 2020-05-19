@@ -1,0 +1,10 @@
+{
+  "presence": {
+    "type": "WATCHING",
+    "activity": "Maybe?",
+    "status": "online"
+  },
+  "core": {
+      "version": "1"
+  }
+}
