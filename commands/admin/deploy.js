@@ -1,4 +1,4 @@
-const { emoji, release } = require("../../config.json");
+const { emoji } = require("../../config.json");
 const exec = (require("util").promisify((require("child_process").exec)));
 module.exports = {
 	controls: {
