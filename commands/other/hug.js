@@ -5,7 +5,7 @@ module.exports = {
 		permission: 10,
 		usage: "hug <user>",
 		description: ":heart:",
-		enabled: true
+		enabled: false
 	},
 	do: async (message, client, args, Discord) => {
 		if (!args[0]) return message.channel.send(":x: You must specify a user to hug!");

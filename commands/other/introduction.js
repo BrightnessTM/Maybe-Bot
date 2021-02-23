@@ -288,30 +288,6 @@ module.exports = {
 			m.delete();
 		}, 5000));
 
-		// eslint-disable-next-line no-case-declarations
-		let unverifRoles = ["605188024036229131", "605188021997797376", "653664459239325725", "653664744472838150", "605188014016167964", "605188016029564938", "701802103806361641"];
-		// eslint-disable-next-line no-case-declarations
-		let verifRoles = ["605187922379014156", "605187924106936321", "653665293532397591", "653665594264256533", "605187909246779424", "605187915668258829"];
-
-		let hasRole = "";
-
-		verifRoles.forEach(r => {
-			if (message.member.roles.cache.has(r)) {
-				hasRole = r;
-				verified = true;
-			}
-		});
-
-		if (!hasRole) unverifRoles.forEach(r => {
-			if (message.member.roles.cache.has(r)) hasRole = r;
-		});
-
-		if (!hasRole) return message.channel.send(":x: You do not have a gender role, therefore your introduction cannot be completed.").then(m => setTimeout(function() {
-			m.delete();
-		}, 5000));
-
-		color = message.guild.roles.cache.get(hasRole).hexColor;
-
 		message.author.send("Time to create an introduction! Respond with your answers to the questions the bot gives. You can skip any of them by sending `skip`.").then(sent => {
 			return introduce(1, sent.channel);
 		}).catch(() => {
