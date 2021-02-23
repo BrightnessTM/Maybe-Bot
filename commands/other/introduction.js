@@ -271,7 +271,6 @@ module.exports = {
 				// eslint-disable-next-line no-case-declarations
 				let embed = new Discord.MessageEmbed()
 					.setAuthor(`${message.author.tag}'s Introduction`, message.author.displayAvatarURL({format: "png", dynamic: true}))
-					.setFooter(verified ? "Verified" : "Unverified")
 					.setColor(color)
 					.setTimestamp()
 					.setDescription(introArr.join("\n"));
