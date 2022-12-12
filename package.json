@@ -14,7 +14,7 @@
     "decache": "^4.5.1",
     "discord.js": "^12.1.1",
     "dotenv": "^8.2.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "humanize-duration": "^3.22.0",
     "mongoose": "^5.9.7",
     "mongoose-sequence": "^5.2.2",
